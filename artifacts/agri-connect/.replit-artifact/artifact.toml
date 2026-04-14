@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/"
+title = "Phytoclinic"
+version = "1.0.0"
+id = "artifacts/agri-connect"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/" ]
+localPort = 23379
+
+[services.development]
+run = "pnpm --filter @workspace/agri-connect run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/agri-connect", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/agri-connect", "run", "serve" ]
+
+[services.env]
+PORT = "23379"
+BASE_PATH = "/"

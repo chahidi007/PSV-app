@@ -1,0 +1,87 @@
+{
+  "expo": {
+    "name": "Phytoclinic",
+    "slug": "phytoclinic",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "phytoclinic",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "description": "استشارات زراعية متخصصة - تواصل مع خبراء زراعيين معتمدين لتشخيص أمراض النباتات والمحاصيل. Consultations agronomiques spécialisées avec des experts certifiés.",
+    "primaryColor": "#2d6a4f",
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f5f9f4"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.phytoclinic.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Phytoclinic a besoin d'accéder à l'appareil photo pour photographier vos cultures et plantes afin de les soumettre à un expert agricole.",
+        "NSPhotoLibraryUsageDescription": "Phytoclinic a besoin d'accéder à votre bibliothèque de photos pour joindre des images à vos consultations.",
+        "NSPhotoLibraryAddUsageDescription": "Phytoclinic a besoin d'enregistrer des photos dans votre bibliothèque.",
+        "NSMicrophoneUsageDescription": "Phytoclinic a besoin d'accéder au microphone pour envoyer des messages vocaux à votre expert agricole.",
+        "NSLocationWhenInUseUsageDescription": "Phytoclinic utilise votre position pour améliorer les recommandations agricoles selon votre région.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.phytoclinic.app",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#f5f9f4"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://phytoclinic.app/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-image-picker",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Phytoclinic a besoin d'accéder au microphone pour envoyer des messages vocaux à votre expert agricole."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#2d6a4f",
+          "sounds": []
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "36d6f974-4b42-4d6a-ba4d-3ce1b88c86cd"
+      }
+    },
+    "owner": "phytoclinic-build"
+  }
+}

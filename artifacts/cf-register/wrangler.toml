@@ -1,0 +1,13 @@
+name = "phytoclinic-register"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "phytoclinic-users"
+database_id = "8bfe68f8-68c8-4d43-9d1a-08ab80eaf26f"
+
+[vars]
+EXPRESS_API_URL = "https://e5fa2394-c6c2-4f8c-b0df-18375d64b589-00-tdlkvh8rbudj.janeway.replit.dev"
+INTERNAL_API_KEY = "phytoclinic-internal-sync-2024"
