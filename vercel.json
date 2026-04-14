@@ -1,0 +1,6 @@
+{
+  "installCommand": "pnpm install --ignore-scripts",
+  "buildCommand": "pnpm run build --if-present",
+  "outputDirectory": "dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
